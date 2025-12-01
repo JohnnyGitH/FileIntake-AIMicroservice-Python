@@ -1,4 +1,4 @@
-# AI Liaison Microservice
+# 🤖 AI Liaison Microservice
 
 A dedicated Python service built to act as an intermediary between the core `FileIntake` application and various external AI providers (e.g., Gemini, OpenAI, etc.). This architecture centralizes API key management, isolates the main application from third-party dependencies, and allows for easy swapping of AI models.
 
