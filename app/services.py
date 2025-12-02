@@ -1,7 +1,7 @@
 import os
 from openai import OpenAI
 
-client = OpenAI(api_key=os.getenv("Key_Goes_here"))
+#client = OpenAI(api_key=os.getenv("Key_Goes_here"))
 
 async def summarize_document(prompt:str) -> str:
     # response = client.chat.completions.create(
