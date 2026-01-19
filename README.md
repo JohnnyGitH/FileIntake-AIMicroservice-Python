@@ -1,3 +1,6 @@
+[![Python Build and Test](https://github.com/JohnnyGitH/FileIntake-AIMicroservice-Python/actions/workflows/test-build.yml/badge.svg)](https://github.com/JohnnyGitH/FileIntake-AIMicroservice-Python/actions/workflows/test-build.yml)
+[![codecov](https://codecov.io/gh/JohnnyGitH/FileIntake-AIMicroservice-Python/branch/master/graph/badge.svg)](https://codecov.io/gh/JohnnyGitH/FileIntake-AIMicroservice-Python)
+
 # 🤖 AI Liaison Microservice
 
 A dedicated Python service built to act as an intermediary between the core `FileIntake` application and various external AI providers (e.g., Gemini, OpenAI, etc.). This architecture centralizes API key management, isolates the main application from third-party dependencies, and allows for easy swapping of AI models.
@@ -11,7 +14,6 @@ A dedicated Python service built to act as an intermediary between the core `Fil
 * **Decoupling:** Protects the main `FileIntake` application from changes in AI SDKs or API versions.
 
 * **Provider Agnostic:** Designed with a placeholder function (`call_ai_api`) that can be easily updated to communicate with any LLM platform.
-
 
 ## Notes
 

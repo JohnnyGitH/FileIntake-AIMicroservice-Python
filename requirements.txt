@@ -3,3 +3,6 @@ uvicorn
 pydantic
 openai
 python-dotenv
+pytest
+pytest-cov
+httpx
