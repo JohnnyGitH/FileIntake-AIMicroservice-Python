@@ -37,7 +37,6 @@ jobs:
       - name: 🐳 Build & push image
         run: |
           IMAGE="$REGION-docker.pkg.dev/$PROJECT_ID/$AR_REPO/ai-microservice:${{ github.sha }}"
-          docker build -t "$IMAGE"
           docker build -t "$IMAGE" .
           docker push "$IMAGE"
           echo "IMAGE=$IMAGE" >> $GITHUB_ENV
