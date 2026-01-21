@@ -39,6 +39,7 @@ This pipeline ensures all changes are tested, reviewed, and safely deployed to p
 
 ## 🧱 Architecture
 
+```text
 ┌────────────┐         ┌──────────────────────────┐
 │ FileIntake │  HTTP   │ AI Liaison Microservice  │
 │ (Main App) ├───────▶│  (FastAPI / Cloud Run)    │
@@ -50,6 +51,7 @@ This pipeline ensures all changes are tested, reviewed, and safely deployed to p
                           │ External AI Providers   │
                           │ (OpenAI / Gemini / etc) │
                           └────────────────────────┘
+```
 
 The AI Liaison Microservice acts as a boundary between the core application and external AI providers, centralizing authentication, request shaping, and provider-specific logic.
 
