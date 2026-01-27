@@ -20,7 +20,7 @@ async def eli5(req: SummaryRequest):
 
 @router.post("/pointform", response_model=SummaryResponse)
 async def pointform(req: SummaryRequest):
-    print("🔥 explain like I am 5 endpoint hit")
+    print("🔥 pointform endpoint hit")
     print("📦 request: ", req)
     result = await pointform_document(req.text)
     return SummaryResponse(summary=result)
